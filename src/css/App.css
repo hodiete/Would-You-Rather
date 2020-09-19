@@ -1,0 +1,201 @@
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.login__page{
+max-width: 500px;
+margin: auto;
+}
+.image__login{
+ display: inline-block;
+border-style:dotted;
+width: 300px;
+height: 300px;
+border-radius: 50%;
+font-size: 40px;
+margin-bottom: 2rem;;
+
+
+
+
+}
+.text__center{
+  text-align: center;
+  
+
+}
+
+.form-control{
+ margin-bottom: 20px;
+
+}
+.nav__right{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.nav__right > *{
+padding: 10px;
+}
+.nav__right img {
+ border-radius: 50%;
+
+}
+.user__name {
+ color: white;
+
+}
+.user__picture{
+  border-radius: 50%;
+}
+.navbar{
+margin-bottom: 2rem;
+padding: 0 1rem;
+
+}
+.nav__left > a {
+  margin-right: 40px;
+  display: block;
+  
+  color: white;
+ padding: 30px
+
+
+}
+.nav__left > a:hover {
+  color: black;
+  text-decoration: none;
+  background: white
+}
+
+h1,h2, h3 {
+ margin: 2rem 0;
+}
+
+.dashboard{
+max-width: 800px;
+margin: auto;
+
+}
+
+.card {
+margin: 2rem 0;
+
+}
+
+.question__card {
+   display: flex;
+   justify-content: space-evenly;
+   padding: 15px;
+}
+
+.question__text {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+
+}
+
+.card .jumbotron {
+  padding: 1rem 2rem;
+  background: #343a40;
+  color: white;
+}
+
+.buttons {
+display: flex;
+justify-content: space-around;
+
+}
+.question__form {
+ text-align: center;
+ margin: auto;
+ padding: 2rem;
+}
+
+.percentage {
+  position: relative;
+  width: 100%;
+  height: 20px;
+  
+  background: grey;
+}
+
+.percentage__vote {
+ position: absolute;
+ top: 0;
+ left: 0;
+ background: black;
+ height: 100%;
+text-align: center;
+ color:white;
+
+}
+.votes {
+  text-align: center;
+  padding: 20px;
+}
+
+.voted__for{
+ border: 1px solid black;
+ background: green;
+ color:white;
+
+}
+
+ul {
+ list-style: none;
+}
+
+.notFound__page {
+ text-align: center;
+}
+.leaderboard{
+ width: 100%;
+
+}
+
+.author__information{
+  display: flex;
+  justify-content: space-evenly;
+  margin-bottom: 2rem;
+
+}
+.leaderboard__header, .newQuestion__header{
+ text-align: center;
+}
