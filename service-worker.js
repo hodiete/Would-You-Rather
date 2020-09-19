@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/4.3.1/workbox-sw.js");
 
 importScripts(
-  "/hodiete21/Would-You-Rather/precache-manifest.96352b8791a6b32e35ec8cd461b2d504.js"
+  "/hodiete21/Would-You-Rather/precache-manifest.222d0303a0ae552c9cd51e6329a3a93d.js"
 );
 
 self.addEventListener('message', (event) => {
