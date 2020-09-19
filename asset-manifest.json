@@ -1,0 +1,25 @@
+{
+  "files": {
+    "main.css": "/hodiete21/Would-You-Rather/static/css/main.d15032a8.chunk.css",
+    "main.js": "/hodiete21/Would-You-Rather/static/js/main.2a04f8ba.chunk.js",
+    "main.js.map": "/hodiete21/Would-You-Rather/static/js/main.2a04f8ba.chunk.js.map",
+    "runtime-main.js": "/hodiete21/Would-You-Rather/static/js/runtime-main.c343fe2a.js",
+    "runtime-main.js.map": "/hodiete21/Would-You-Rather/static/js/runtime-main.c343fe2a.js.map",
+    "static/css/2.d9ad5f5c.chunk.css": "/hodiete21/Would-You-Rather/static/css/2.d9ad5f5c.chunk.css",
+    "static/js/2.6c6f5765.chunk.js": "/hodiete21/Would-You-Rather/static/js/2.6c6f5765.chunk.js",
+    "static/js/2.6c6f5765.chunk.js.map": "/hodiete21/Would-You-Rather/static/js/2.6c6f5765.chunk.js.map",
+    "index.html": "/hodiete21/Would-You-Rather/index.html",
+    "precache-manifest.96352b8791a6b32e35ec8cd461b2d504.js": "/hodiete21/Would-You-Rather/precache-manifest.96352b8791a6b32e35ec8cd461b2d504.js",
+    "service-worker.js": "/hodiete21/Would-You-Rather/service-worker.js",
+    "static/css/2.d9ad5f5c.chunk.css.map": "/hodiete21/Would-You-Rather/static/css/2.d9ad5f5c.chunk.css.map",
+    "static/css/main.d15032a8.chunk.css.map": "/hodiete21/Would-You-Rather/static/css/main.d15032a8.chunk.css.map",
+    "static/js/2.6c6f5765.chunk.js.LICENSE.txt": "/hodiete21/Would-You-Rather/static/js/2.6c6f5765.chunk.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.c343fe2a.js",
+    "static/css/2.d9ad5f5c.chunk.css",
+    "static/js/2.6c6f5765.chunk.js",
+    "static/css/main.d15032a8.chunk.css",
+    "static/js/main.2a04f8ba.chunk.js"
+  ]
+}
