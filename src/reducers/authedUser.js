@@ -1,12 +1,11 @@
-import { SET_AUTHED_USER } from  "../actions/users"
+import { SET_AUTHED_USER } from "../actions/users";
 //reducer for authedUser state management
-export default function authedUser (state = null, action){
-  switch(action.type){
-    case SET_AUTHED_USER :
-  return action.id
+export default function authedUser(state = null, action) {
+ switch (action.type) {
+  case SET_AUTHED_USER:
+   return action.id;
 
-  default :
-  return state
-  }
-
+  default:
+   return state;
+ }
 }

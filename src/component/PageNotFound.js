@@ -4,14 +4,12 @@ import { Container, Jumbotron } from "react-bootstrap";
 //exist
 function PageNotFound(props) {
  return (
- <Container>
-  <Jumbotron className="notFound__page">
+  <Container>
+   <Jumbotron className="notFound__page">
     <h1> Oops, Page not found</h1>
-  </Jumbotron>
- </Container>
- )
- 
- 
+   </Jumbotron>
+  </Container>
+ );
 }
 
 export default PageNotFound;

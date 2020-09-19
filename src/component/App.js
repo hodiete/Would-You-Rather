@@ -19,9 +19,9 @@ class App extends Component {
  render() {
   const { authedUser, users, dispatch } = this.props;
   return (
-  //building routes, the navbar to show everywhere so not in the switch statement
-  //if not logged in then go to the login page, if logged in then display the appropriate component depending
-  //on the route
+   //building routes, the navbar to show everywhere so not in the switch statement
+   //if not logged in then go to the login page, if logged in then display the appropriate component depending
+   //on the route
    <Container fluid="md">
     <NavBar user={authedUser} dispatch={dispatch} users={users} />
     <Switch>

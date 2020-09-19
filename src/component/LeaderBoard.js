@@ -8,42 +8,44 @@ class LeaderBoard extends Component {
   return (
    <Container>
     <div className="leaderboard__header">
-    <h1> Leaderboard </h1>
-     </div>
+     <h1> Leaderboard </h1>
+    </div>
     <ul>
-              <div className="question__card">
-     <div className="question__author leaderboard card">
-     {users
-      .sort((a, b) => b.total - a.total)
-      .map((user, i) => {
-       return (
-        <li key={user.id}>
-        <Jumbotron>
-         <h3>  #{i+1}:  {user.name}</h3>
-         </Jumbotron>
-         <div className="author__information">
-          <div className="author__picture">
-         <img
-          src={user.avatar}
-          alt={`Avatar for ${user.name}`}
-          width={250}
-          height={250}
-         />
-         </div>
-         <div className="author__text">
-          <div> Score : {user.total}</div>
-         <div> Answered Questions : {user.answeredQuestions}</div>
-         <div> Created Question : {user.createdQuestions}</div>
-   
-         </div>
-         </div>
-        </li>
-       );
-      })}
+     <div className="question__card">
+      <div className="question__author leaderboard card">
+       {users
+        .sort((a, b) => b.total - a.total)
+        .map((user, i) => {
+         return (
+          <li key={user.id}>
+           <Jumbotron>
+            <h3>
+             {" "}
+             #{i + 1}: {user.name}
+            </h3>
+           </Jumbotron>
+           <div className="author__information">
+            <div className="author__picture">
+             <img
+              src={user.avatar}
+              alt={`Avatar for ${user.name}`}
+              width={250}
+              height={250}
+             />
+            </div>
+            <div className="author__text">
+             <div> Score : {user.total}</div>
+             <div> Answered Questions : {user.answeredQuestions}</div>
+             <div> Created Question : {user.createdQuestions}</div>
+            </div>
+           </div>
+          </li>
+         );
+        })}
       </div>
-      </div>
+     </div>
     </ul>
- </Container>
+   </Container>
   );
  }
 }

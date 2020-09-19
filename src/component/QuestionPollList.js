@@ -18,7 +18,7 @@ class QuestionPollList extends Component {
    ? this.setState({ isAnswered: true })
    : this.setState({ isAnswered: false });
  };
-// building the question html depending on parameters passed
+ // building the question html depending on parameters passed
  buildQuestion = (aFunc) =>
   aFunc.map((question) => {
    const author = this.props.authors.filter(
@@ -27,28 +27,30 @@ class QuestionPollList extends Component {
 
    return (
     <div key={question.id} className="card">
-   <Jumbotron>
-     {this.state.isAnswered ? (
-      <h2> Asked by {author[0].name} </h2>
-     ) : (
-      <h2> {author[0].name} asks: </h2>
-     )}
+     <Jumbotron>
+      {this.state.isAnswered ? (
+       <h2> Asked by {author[0].name} </h2>
+      ) : (
+       <h2> {author[0].name} asks: </h2>
+      )}
      </Jumbotron>
      <div className="question__card">
-     <div className="question__author">
-     <img
-      src={`${author[0].avatarURL}`}
-      alt="Author"
-      width={250}
-      height={250}
-     />
+      <div className="question__author">
+       <img
+        src={`${author[0].avatarURL}`}
+        alt="Author"
+        width={250}
+        height={250}
+       />
+      </div>
+      <div className="question__text">
+       <h3> Would You rather </h3>
+       <div> ...{question.optionOne.text}... </div>
+       <Link to={`/questions/${question.id}`} className="btn btn-success">
+        View Poll
+       </Link>
+      </div>
      </div>
-     <div className="question__text">
-     <h3> Would You rather </h3>
-     <div> ...{question.optionOne.text}... </div>
-     <Link to={`/questions/${question.id}`} className="btn btn-success">View Poll</Link>
-    </div>
-    </div>
     </div>
    );
   });
@@ -61,16 +63,23 @@ class QuestionPollList extends Component {
   const questionAnswered = this.handleSortedQuestions(answeredQuestions);
 
   return (
-
    <Container className="dashboard">
     <div>
      <div className="buttons">
-     <Button  className={ !isAnswered && "active text__color"}   variant={!isAnswered ? "success" : "secondary"} onClick={this.handleClick} name="notanswered">
-      UnAnswered Question
-     </Button>
-     <Button  className={ isAnswered && "active text__color"} variant={isAnswered ? "success" : "secondary"} onClick={this.handleClick} name="answered">
-      Answered Question
-     </Button>
+      <Button
+       className={!isAnswered && "active text__color"}
+       variant={!isAnswered ? "success" : "secondary"}
+       onClick={this.handleClick}
+       name="notanswered">
+       UnAnswered Question
+      </Button>
+      <Button
+       className={isAnswered && "active text__color"}
+       variant={isAnswered ? "success" : "secondary"}
+       onClick={this.handleClick}
+       name="answered">
+       Answered Question
+      </Button>
      </div>
 
      {isAnswered
