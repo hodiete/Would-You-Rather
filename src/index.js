@@ -11,7 +11,7 @@ import "./css/App.css";
 const store = createStore(reducers, applyMiddleWare);
 
 ReactDOM.render(
- <BrowserRouter>
+ <BrowserRouter basename={process.env.PUBLIC_URL}>
   <Provider store={store}>
    <App />
   </Provider>
