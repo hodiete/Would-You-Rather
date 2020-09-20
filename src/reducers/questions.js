@@ -28,7 +28,6 @@ export default function questions(state = {}, action) {
    return delete state[action.question.id];
 
   case ADD_QUESTION_ANSWER:
-   console.log(action);
    return {
     ...state,
     [action.qanswer.qid]: {

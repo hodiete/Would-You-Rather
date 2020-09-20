@@ -15,15 +15,14 @@ class App extends Component {
  componentDidMount() {
   this.props.dispatch(handleInitialData());
  }
-
+ //building routes, the navbar to show everywhere so not in the switch statement
+ //if not logged in then go to the login page, if logged in then display the appropriate component depending
+ //on the route
  render() {
   const { authedUser, users, dispatch } = this.props;
   return (
-   //building routes, the navbar to show everywhere so not in the switch statement
-   //if not logged in then go to the login page, if logged in then display the appropriate component depending
-   //on the route
    <Container fluid="md">
-    <NavBar user={authedUser} dispatch={dispatch} users={users} />
+    <NavBar user={authedUser} users={users} />
     <Switch>
      <Route exact path="/" component={authedUser ? QuestionPollList : Login} />
      <Route
