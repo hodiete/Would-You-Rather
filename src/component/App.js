@@ -22,7 +22,7 @@ class App extends Component {
   const { authedUser, users, dispatch } = this.props;
   return (
    <Container fluid="md">
-    <NavBar user={authedUser} users={users} />
+    <NavBar user={authedUser} dispatch={dispatch} users={users} />
     <Switch>
      <Route exact path="/" component={authedUser ? QuestionPollList : Login} />
      <Route
