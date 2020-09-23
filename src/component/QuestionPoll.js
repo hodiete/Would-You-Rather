@@ -48,7 +48,7 @@ class QuestionPoll extends Component {
         <div className="question__card">
          <div className="question__author">
           <img
-           src={`%PUBLIC_URL%${author.picture}`}
+           src={`%PUBLIC_URL%/${author.picture}`}
            alt="Author"
            width={250}
            height={250}
