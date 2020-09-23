@@ -27,7 +27,7 @@ class LeaderBoard extends Component {
            <div className="author__information">
             <div className="author__picture">
              <img
-              src={user.avatar}
+              src={`%PUBLIC_URL%${user.avatar}`}
               alt={`Avatar for ${user.name}`}
               width={250}
               height={250}

@@ -34,7 +34,7 @@ class NavBar extends Component {
           <div className="user__name"> Hello {user.name}</div>
           <img
            className="user__picture"
-           src={`${user.avatarURL}`}
+           src={`%PUBLIC_URL%${user.avatarURL}`}
            alt={`${user.name}'s avatar`}
            width={80}
            height={80}
